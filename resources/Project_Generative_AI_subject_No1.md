@@ -31,7 +31,7 @@ Simulated enterprise data will be provided, which includes:
 
 3. **Development:**
    - Architectural design of the web application.
-   - Building functional back-end components of the application using Flask in Python, integrating Azure OpenAI's API and a RAG system.
+   - Building functional back-end components of the application using Flask in Python, integrating OpenAI's API and a RAG system.
    - Building a user-friendly front-end using HTML, CSS, and Javascript.
    - Storing data in a vector database, such as ChromaDB.
    - Version control with Git.
@@ -97,6 +97,8 @@ Use the sample data first `data\twitter_data_clean_sample.csv`.
 
 
 ## Suggestion of the way of work
+
+- USE CURSOR AS MUCH AS YOU CAN TO GENERATE CODE
 
 - Start with comprehending the data using the sample file and establishing a clear objective for your application, and how your application will look like / work.
 

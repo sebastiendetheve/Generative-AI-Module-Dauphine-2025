@@ -7,6 +7,8 @@
 
 This project offers you the opportunity to explore and implement your own idea using Large Language Models (LLMs). You are free to choose the type of application you want to develop (web application, mobile app, desktop application, etc.) and the specific use case you want to address. The only requirement is that your project must leverage LLMs in a meaningful way to solve a real-world problem or create an innovative solution.
 
+####  USE CURSOR AS MUCH AS YOU CAN TO BE MORE PRODUCTIVE
+
 ## Objectives
 
 1. **Project Definition:**
