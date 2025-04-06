@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Details</title>
+</head>
+<body>
+    <h2>Get Ride Details</h2>
+    <label for="departure_address">Departure Address:</label>
+    <input type="text" id="departure_address" name="departure_address"><br><br>
+
+    <label for="destination_address">Destination Address:</label>
+    <input type="text" id="destination_address" name="destination_address"><br><br>
+
+    <button onclick="getRideDetails()">Get Details</button>
+
+    <h3>Ride Details</h3>
+    <div id="rideDetails"></div>
+
+    <script>
+        function getRideDetails() {
+            var departureAddress = document.getElementById('departure_address').value;
+            var destinationAddress = document.getElementById('destination_address').value;
+
+            fetch(`/get_car?departure_address=${departureAddress}&destination_address=${destinationAddress}`)
+                .then(response => response.json())
+                .then(data => {
+                    var details = `<p>Type of Car: ${data.type_of_car}</p>
+                                   <p>Price: $${data.price}</p>
+                                   <p>GPS Coordinates: lat. ${data.gps_coordinates.lat} long. ${data.gps_coordinates.long}</p>`
+                    document.getElementById('rideDetails').innerHTML = details;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
