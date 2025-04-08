@@ -31,7 +31,7 @@ Welcome to the Generative AI course repository at Dauphine-PSL University for th
 └── config.ini          # Configuration file
 ```
 
-## 📚 Course Materials
+## 📚 Course Materials  
 
 ### 1. Environment Setup Guide
 Located in `resources/Guide_Setup_Environment.md`, this comprehensive guide provides:
